@@ -37,4 +37,4 @@ Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/bui
 
 ## Maintained by
 
-- [Workfreaks Business Services]([https://workfreaks.app/])
+- [Workfreaks Business Services Private Ltd]([https://workfreaks.app/])
