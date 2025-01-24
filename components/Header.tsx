@@ -8,7 +8,7 @@ export default function Header() {
   const [isOpen, setIsOpen] = useState(false)
 
   return (
-    <header className="bg-white shadow-md">
+    <header className=" w-full fixed bg-white shadow-md">
       <nav className="container mx-auto px-6 py-3">
         <div className="flex justify-between items-center">
           <motion.div
@@ -38,6 +38,12 @@ export default function Header() {
             <NavLink href="#about" mobile>About Us</NavLink>
             <NavLink href="#events" mobile>Events</NavLink>
             <NavLink href="#enquiry" mobile>Enquiry</NavLink>
+
+            {/* Add email and mobile number */}
+            <div className="mt-4 text-gray-700">
+              <p>Email: <a href="mailto:info@workfreaksevents.com" className="text-blue-600 hover:text-blue-800">info@workfreaksevents.com</a></p>
+              <p>Mobile No.: <span className="text-gray-800">+1 234 567 890</span></p>
+            </div>
           </div>
         )}
       </nav>
