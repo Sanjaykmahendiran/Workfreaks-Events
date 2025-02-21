@@ -41,7 +41,7 @@ export default function Hero() {
           transition={{ duration: 0.5 }}
           className="text-4xl md:text-6xl font-bold mb-4"
         >
-          Welcome to Workfreaks Events
+          Welcome to Big Party
         </motion.h1>
         <motion.p
           initial={{ opacity: 0, y: 20 }}
@@ -49,7 +49,7 @@ export default function Hero() {
           transition={{ duration: 0.5, delay: 0.2 }}
           className="text-xl md:text-2xl mb-8"
         >
-          Creating Unforgettable Moments
+         We specialize in crafting unforgettable experiences through meticulous planning and flawless execution of events that leave lasting impressions.
         </motion.p>
         <motion.div
           initial={{ opacity: 0, scale: 0.8 }}
