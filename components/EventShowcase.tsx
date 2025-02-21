@@ -9,7 +9,7 @@ import 'swiper/css';
 import 'swiper/css/pagination';
 import CorporateImage1 from '@/app/assets/corporate-events/image1.jpg';
 import CorporateImage2 from '@/app/assets/corporate-events/image2.jpg';
-import WeddingImage1 from '@/app/assets/marriage/image10.jpg';
+import WeddingImage1 from '@/app/assets/marriage/image30.jpg';
 import WeddingImage2 from '@/app/assets/marriage/image12.jpg';
 import BirthdayImage1 from '@/app/assets/bday/image13.jpg';
 import BirthdayImage2 from '@/app/assets/bday/image1.jpg';
