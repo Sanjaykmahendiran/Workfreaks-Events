@@ -14,7 +14,7 @@ export default function Footer() {
             </ul>
           </div>
           <div className="w-full md:w-1/3 text-center md:text-right">
-            <p>&copy; 2024 Workfreaks Events. All rights reserved.</p>
+            <p>&copy; {new Date().getFullYear()} Workfreaks Events. All rights reserved.</p>
           </div>
         </div>
       </div>
