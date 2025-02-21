@@ -38,9 +38,6 @@ export default function Footer() {
                 <a href="#" className="text-muted-foreground hover:text-primary transition-colors">Our Services</a>
               </li>
               <li>
-                <a href="#" className="text-muted-foreground hover:text-primary transition-colors">Portfolio</a>
-              </li>
-              <li>
                 <a href="#" className="text-muted-foreground hover:text-primary transition-colors">Testimonials</a>
               </li>
               <li>
@@ -64,9 +61,6 @@ export default function Footer() {
               </li>
               <li>
                 <a href="#" className="text-muted-foreground hover:text-primary transition-colors">Social Gatherings</a>
-              </li>
-              <li>
-                <a href="#" className="text-muted-foreground hover:text-primary transition-colors">Sports Events</a>
               </li>
             </ul>
           </div>
