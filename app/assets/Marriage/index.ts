@@ -8,7 +8,7 @@ export { default as marriage7 } from "./image7.jpg";
 export { default as marriage8 } from "./image8.jpg";
 export { default as marriage9 } from "./image9.jpg";
 export { default as marriage10 } from "./image10.jpg";
-export { default as marriage11 } from "./image11.jpg";
+// export { default as marriage11 } from "./image11.jpg";
 export { default as marriage12 } from "./image12.jpg";
 export { default as marriage13 } from "./image13.jpg";
 export { default as marriage14 } from "./image14.jpg";

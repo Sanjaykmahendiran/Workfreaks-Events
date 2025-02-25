@@ -21,40 +21,47 @@ export function TestimonialsSection() {
     if (!emblaApi) return
     onSelect()
     emblaApi.on('select', onSelect)
+
+    // Auto-scroll functionality
+    const autoScroll = setInterval(() => {
+      if (emblaApi) emblaApi.scrollNext()
+    }, 3000) // Adjust timing (3000ms = 3s)
+
+    return () => clearInterval(autoScroll) // Cleanup interval on unmount
   }, [emblaApi, onSelect])
 
   const testimonials = [
     {
-      name: "Sarah Johnson",
-      quote: "BIG PARTY handled our annual conference flawlessly. Their professionalism and attention to detail were unmatched!",
+      name: "Aarav Sharma",
+      quote: "Events & Shows handled our annual conference flawlessly. Their professionalism and attention to detail were unmatched!",
       avatar: men
     },
     {
-      name: "Michael and Emily",
-      quote: "Our wedding was magical! BIG PARTY brought our dream celebration to life with their incredible planning.",
+      name: "Rajesh",
+      quote: "Our wedding was magical! Events & Shows brought our dream celebration to life with their incredible planning.",
       avatar: men
     },
     {
-      name: "David Lee",
+      name: "Vikram Iyer",
       quote: "The surprise party for my 40th birthday was beyond my wildest expectations. Truly unforgettable!",
       avatar: men
     },
     {
-      name: "Jessica Chen",
+      name: "Neha Patel",
       quote: "The product launch event exceeded all expectations. The venue decoration and timing were perfect!",
       avatar: men
     },
     {
-      name: "Robert Wilson",
-      quote: "BIG PARTY helped us raise record donations with their expertly planned charity gala. Outstanding service!",
+      name: "Sandeep Verma",
+      quote: "Events & Shows helped us raise record donations with their expertly planned charity gala. Outstanding service!",
       avatar: men
     },
     {
-      name: "Emma Thompson",
+      name: "Ananya Reddy",
       quote: "From stage design to crowd management, every aspect was handled professionally. Best event partner ever!",
       avatar: men
     }
-  ];
+];
 
   return (
     <section className="pt-16 md:pt-18 pb-16">

@@ -3,7 +3,7 @@ export { default as bday2 } from "./image2.jpg";
 export { default as bday3 } from "./image3.jpg";
 export { default as bday4 } from "./image4.jpg";
 export { default as bday5 } from "./image5.jpg";
-export { default as bday6 } from "./image6.jpg";
+// export { default as bday6 } from "./image6.jpg";
 export { default as bday7 } from "./image7.jpg";
 export { default as bday8 } from "./image8.jpg";
 export { default as bday9 } from "./image9.jpeg";

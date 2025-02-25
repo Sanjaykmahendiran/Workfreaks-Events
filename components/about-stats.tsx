@@ -12,7 +12,7 @@ const stats = [
 
 export default function AboutStats() {
   return (
-    <div className="grid grid-cols-2 md:grid-cols-4 gap-8 mb-18">
+    <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-4 gap-6 md:gap-8 px-4 md:px-8 lg:px-16 mb-12">
       {stats.map((stat, index) => (
         <StatItem key={index} number={stat.number} label={stat.label} delay={index * 0.1} />
       ))}
@@ -50,10 +50,10 @@ function StatItem({ number, label, delay }) {
       viewport={{ once: true }}
       className="text-center"
     >
-      <h3 className="text-6xl font-bold bg-gradient-to-r from-[#0b0a46] via-[#f60505] to-[#cc811d] bg-clip-text text-transparent mb-2">
+      <h3 className="text-4xl sm:text-5xl md:text-6xl font-bold bg-gradient-to-r from-[#0b0a46] via-[#f60505] to-[#cc811d] bg-clip-text text-transparent mb-2">
         {count}+
       </h3>
-      <div className="text-sm text-muted-foreground">{label}</div>
+      <div className="text-base sm:text-lg text-muted-foreground">{label}</div>
     </motion.div>
   );
 }

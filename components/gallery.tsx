@@ -5,8 +5,9 @@ import { motion } from "framer-motion";
 
 // Import images using index files
 import * as corporateImages from "@/app/assets/corporate-events";
-import * as marriageImages from "@/app/assets/marriage";
+import * as marriageImages from "@/app/assets/Marriage";
 import * as bdayImages from "@/app/assets/bday";
+import * as specialOccasion from "@/app/assets/special-occasion"
 
 // Convert images into an array
 const images = [
@@ -26,6 +27,14 @@ const images = [
 
   // Birthday Events
   ...Object.entries(bdayImages).map(([key, src], index) => ({
+    id: index + 47,
+    src,
+    alt: `Birthday Event ${index + 1}`,
+  })),
+
+    // Birthday Events
+  
+  ...Object.entries(specialOccasion).map(([key, src], index) => ({
     id: index + 47,
     src,
     alt: `Birthday Event ${index + 1}`,
