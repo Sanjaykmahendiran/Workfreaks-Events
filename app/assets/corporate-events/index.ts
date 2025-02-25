@@ -3,7 +3,7 @@ export { default as corporate2 } from "./image2.jpg";
 export { default as corporate3 } from "./image3.jpg";
 export { default as corporate4 } from "./image4.jpg";
 export { default as corporate5 } from "./image5.webp";
-export { default as corporate6 } from "./image6.jpg";
+// export { default as corporate6 } from "./image6.jpg";
 export { default as corporate7 } from "./image7.jpg";
 export { default as corporate8 } from "./image8.jpg";
 export { default as corporate9 } from "./image9.jpg";

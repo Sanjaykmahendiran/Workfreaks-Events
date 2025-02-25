@@ -33,7 +33,7 @@ export default function AboutUs() {
   }
 
   return (
-    <section id="about" className="py-20 bg-gray-100">
+    <section id="about" className="py-20 bg-white">
       <div className="container mx-auto px-6">
         <motion.h2
           initial={{ opacity: 0, y: -20 }}
@@ -41,7 +41,7 @@ export default function AboutUs() {
           transition={{ duration: 0.5 }}
           className="text-3xl font-bold text-center mb-8"
         >
-          Welcome to BIG PARTY
+          Welcome to Workfreaks Events & Shows
         </motion.h2>
 
         <motion.p
@@ -50,7 +50,7 @@ export default function AboutUs() {
           transition={{ duration: 0.5, delay: 0.2 }}
           className="text-lg text-gray-700 text-center max-w-3xl mx-auto mb-12"
         >
-          BIG PARTY is your premier event management partner, dedicated to
+          Events & Shows is your premier event management partner, dedicated to
           turning your vision into reality. Whether you're hosting a corporate
           event, wedding, or grand celebration, our seasoned professionals
           ensure a flawless experience.
@@ -62,7 +62,7 @@ export default function AboutUs() {
           transition={{ duration: 0.5, delay: 0.4 }}
           className="text-2xl font-bold text-center mb-8"
         >
-          Why Choose BIG PARTY?
+          Why Choose Us?
         </motion.h3>
 
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
@@ -85,14 +85,6 @@ export default function AboutUs() {
             </motion.div>
           ))}
         </div>
-        <div>
-          <TestimonialsSection />
-        </div>
-        <div className="mt-16">
-          <AboutStats />
-        </div>
-
-        <EnquiryForm />
       </div>
     </section>
   );
