@@ -1,37 +1,8 @@
 "use client";
 
-import { useState, FormEvent, ChangeEvent } from "react";
 import { motion } from "framer-motion";
-import AboutStats from "@/components/about-stats";
-import { TestimonialsSection } from "@/components/testimonials-section";
-import EnquiryForm from "@/components/EnquiryForm";
 
 export default function AboutUs() {
-  const [formData, setFormData] = useState({
-    name: "",
-    email: "",
-    mobile: "",
-    message: "",
-  });
-  const [isSubmitting, setIsSubmitting] = useState(false);
-
-  function handleChange(
-    event: ChangeEvent<HTMLInputElement | HTMLTextAreaElement>
-  ) {
-    const { name, value } = event.target;
-    setFormData((prev) => ({ ...prev, [name]: value }));
-  }
-
-  function handleSubmit(event: FormEvent<HTMLFormElement>) {
-    event.preventDefault();
-    setIsSubmitting(true);
-    setTimeout(() => {
-      alert("Message sent successfully!");
-      setFormData({ name: "", email: "", mobile: "", message: "" });
-      setIsSubmitting(false);
-    }, 2000);
-  }
-
   return (
     <section id="about" className="py-20 bg-white">
       <div className="container mx-auto px-6">
@@ -51,7 +22,7 @@ export default function AboutUs() {
           className="text-lg text-gray-700 text-center max-w-3xl mx-auto mb-12"
         >
           Events & Shows is your premier event management partner, dedicated to
-          turning your vision into reality. Whether you're hosting a corporate
+          turning your vision into reality. Whether you&apos;re hosting a corporate
           event, wedding, or grand celebration, our seasoned professionals
           ensure a flawless experience.
         </motion.p>

@@ -48,12 +48,12 @@ const EnquiryForm: React.FC = () => {
 
   return (
     <div className="flex flex-col items-center justify-center min-h-screen bg-white pt-10 space-y-12">
-      <section className="py-10 w-full  mx-auto px-4">
+      <section className="py-10 w-full mx-auto px-4">
         <div className="bg-white rounded-2xl p-6 md:p-12 shadow-xl">
           <div className="grid grid-cols-1 lg:grid-cols-2 gap-8">
             <div>
               <h2 className="text-3xl md:text-4xl font-bold mb-4 text-center md:text-left">
-                Let's Plan Your Next Event
+                Let&apos;s Plan Your Next Event
               </h2>
               <p className="text-gray-600 text-lg mb-6 text-center md:text-left">
                 Get in touch with our team to start planning your perfect event.

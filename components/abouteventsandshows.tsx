@@ -1,13 +1,5 @@
-import React, { useState } from "react";
+import React from "react";
 import Image from "next/image";
-import {
-  Users,
-  Award,
-  Settings,
-  Calendar,
-  Phone,
-  Mail,
-} from "lucide-react";
 import img from "@/app/assets/corporate-events/image12.jpg";
 import { useRouter } from "next/navigation";
 import Footer from "./Footer";
@@ -46,10 +38,10 @@ const AboutUsPage = () => {
             Why Choose Workfreaks Events & Shows?
           </h2>
           <p className="text-lg text-gray-700 max-w-4xl mx-auto mb-6 text-justify">
-            At Workfreaks Events & Shows, we specialize in turning your event vision into reality with precision, creativity, and expertise. Whether you're hosting a corporate event, a social gathering, or a grand celebration, our team ensures flawless execution from start to finish.
+            At Workfreaks Events & Shows, we specialize in turning your event vision into reality with precision, creativity, and expertise. Whether you&apos;re hosting a corporate event, a social gathering, or a grand celebration, our team ensures flawless execution from start to finish.
           </p>
           <p className="text-gray-700 max-w-4xl mx-auto mb-6">
-            Every event is unique, and we understand that one-size-fits-all solutions don’t work. We work closely with you to understand your objectives, preferences, and brand values to craft a personalized event that aligns with your vision. From initial concept development to post-event follow-up, we handle every aspect, allowing you to focus on your guests and business.
+            Every event is unique, and we understand that one-size-fits-all solutions don&apos;t work. We work closely with you to understand your objectives, preferences, and brand values to craft a personalized event that aligns with your vision. From initial concept development to post-event follow-up, we handle every aspect, allowing you to focus on your guests and business.
           </p>
           <ul className="text-gray-700 list-disc pl-6 max-w-4xl mx-auto text-left">
             <li>Expert Event Planning – Meticulous planning for seamless execution.</li>
@@ -142,7 +134,7 @@ const AboutUsPage = () => {
             <div>
               <h3 className="text-xl font-semibold">11. Sponsorship & Partnership Management</h3>
               <ul className="list-disc pl-6">
-                <li>Securing sponsors and partners to enhance your event’s success.</li>
+                <li>Securing sponsors and partners to enhance your event&apos;s success.</li>
                 <li>Creating sponsorship packages and handling partnership coordination.</li>
               </ul>
             </div>
@@ -190,7 +182,7 @@ const AboutUsPage = () => {
             <li><strong>Post-Event Review:</strong> We evaluate the success of your event, gather feedback, and discuss ways to improve future events.</li>
           </ul>
           <p className="text-gray-700 max-w-4xl mx-auto mt-6">
-            At Workfreaks Events & Shows, our goal is to deliver seamless, unforgettable events that make an impact. Whether you're planning an intimate gathering or a large corporate conference, we are here to provide the expertise and support you need. We take pride in our ability to turn your ideas into reality, managing all the details while ensuring your event exceeds expectations.
+            At Workfreaks Events & Shows, our goal is to deliver seamless, unforgettable events that make an impact. Whether you&apos;re planning an intimate gathering or a large corporate conference, we are here to provide the expertise and support you need. We take pride in our ability to turn your ideas into reality, managing all the details while ensuring your event exceeds expectations.
           </p>
         </div>
       </section>

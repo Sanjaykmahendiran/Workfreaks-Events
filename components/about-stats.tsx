@@ -20,7 +20,14 @@ export default function AboutStats() {
   );
 }
 
-function StatItem({ number, label, delay }) {
+// Define TypeScript types for props
+interface StatItemProps {
+  number: number;
+  label: string;
+  delay: number;
+}
+
+function StatItem({ number, label, delay }: StatItemProps) {
   const [count, setCount] = useState(0);
 
   useEffect(() => {

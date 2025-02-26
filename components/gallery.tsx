@@ -12,21 +12,21 @@ import * as specialOccasion from "@/app/assets/special-occasion"
 // Convert images into an array
 const images = [
   // Corporate Events
-  ...Object.entries(corporateImages).map(([key, src], index) => ({
+  ...Object.entries(corporateImages).map(([ src], index) => ({
     id: index + 1,
     src,
     alt: `Corporate Event ${index + 1}`,
   })),
 
   // Marriage Events
-  ...Object.entries(marriageImages).map(([key, src], index) => ({
+  ...Object.entries(marriageImages).map(([ src], index) => ({
     id: index + 13,
     src,
     alt: `Marriage Event ${index + 1}`,
   })),
 
   // Birthday Events
-  ...Object.entries(bdayImages).map(([key, src], index) => ({
+  ...Object.entries(bdayImages).map(([ src], index) => ({
     id: index + 47,
     src,
     alt: `Birthday Event ${index + 1}`,
@@ -34,7 +34,7 @@ const images = [
 
     // Birthday Events
   
-  ...Object.entries(specialOccasion).map(([key, src], index) => ({
+  ...Object.entries(specialOccasion).map(([ src], index) => ({
     id: index + 47,
     src,
     alt: `Birthday Event ${index + 1}`,
