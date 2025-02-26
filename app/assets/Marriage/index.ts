@@ -32,3 +32,13 @@ export { default as marriage31 } from "./image31.jpg";
 export { default as marriage32 } from "./image32.jpg";
 export { default as marriage33 } from "./image33.jpg";
 export { default as marriage34 } from "./image34.jpg";
+export { default as marriage35 } from "./image35.jpg";
+export { default as marriage36 } from "./image36.jpg";
+export { default as marriage37 } from "./image37.jpg";
+export { default as marriage38 } from "./image38.jpg";
+export { default as marriage39 } from "./image39.jpg";
+export { default as marriage40 } from "./image40.jpg";
+export { default as marriage41 } from "./image41.jpg";
+export { default as marriage42 } from "./image42.jpg";
+export { default as marriage43 } from "./image43.jpg";
+

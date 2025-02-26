@@ -29,9 +29,9 @@ export default function Header() {
             <Image
               src={logo}
               alt="Events & Shows"
-              width={120}
-              height={40}
-              className="h-16 w-auto"
+              width={130}
+              height={50}
+              className="h-18 w-auto"
             />
           </Link>
         </motion.div>
