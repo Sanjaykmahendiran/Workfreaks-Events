@@ -1,6 +1,6 @@
 'use client'
 
-import { useState, useCallback, useEffect } from 'react'
+import {  useCallback, useEffect } from 'react'
 import Image from 'next/image'
 import { Star } from 'lucide-react'
 import useEmblaCarousel from 'embla-carousel-react'
@@ -8,18 +8,13 @@ import men from "@/app/assets/Men.webp"
 
 export function TestimonialsSection() {
   const [emblaRef, emblaApi] = useEmblaCarousel({ loop: true, align: 'start' })
-  const [prevBtnEnabled, setPrevBtnEnabled] = useState(false)
-  const [nextBtnEnabled, setNextBtnEnabled] = useState(false)
 
   const onSelect = useCallback(() => {
     if (!emblaApi) return
-    setPrevBtnEnabled(emblaApi.canScrollPrev())
-    setNextBtnEnabled(emblaApi.canScrollNext())
   }, [emblaApi])
 
   useEffect(() => {
     if (!emblaApi) return
-    onSelect()
     emblaApi.on('select', onSelect)
 
     // Auto-scroll functionality
@@ -61,7 +56,7 @@ export function TestimonialsSection() {
       quote: "From stage design to crowd management, every aspect was handled professionally. Best event partner ever!",
       avatar: men
     }
-];
+  ];
 
   return (
     <section className="pt-16 md:pt-18 pb-16">
@@ -71,7 +66,7 @@ export function TestimonialsSection() {
           <div className="overflow-hidden" ref={emblaRef}>
             <div className="flex">
               {testimonials.map((testimonial, index) => (
-                <div key={index} className="flex-[0_0_100%]  sm:flex-[0_0_50%] lg:flex-[0_0_33.33%] px-4">
+                <div key={index} className="flex-[0_0_100%] sm:flex-[0_0_50%] lg:flex-[0_0_33.33%] px-4">
                   <div className="bg-white p-6 rounded-xl h-full">
                     <div className="flex items-center gap-4 mb-4">
                       <Image

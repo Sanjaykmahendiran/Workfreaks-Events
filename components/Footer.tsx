@@ -1,4 +1,4 @@
-import { Clock, Facebook, Instagram, Linkedin, Mail, MapPin, Phone, Twitter, Youtube } from "lucide-react";
+import { Clock, Facebook, Instagram, Linkedin, Mail, MapPin, Phone, Youtube } from "lucide-react";
 import Image from "next/image";
 import logo from "@/app/assets/logo-White.png"
 
