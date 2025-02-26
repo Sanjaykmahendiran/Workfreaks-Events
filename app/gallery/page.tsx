@@ -7,7 +7,7 @@ export default function Page() {
   return (
     <>
       <Header />
-      <main className="container mx-auto pt-[90px]">
+      <main className="container mx-auto pt-[100px]">
         <h1 className="text-3xl font-bold text-center mb-8">Events Gallery</h1>
         <ImageGallery />
       </main>

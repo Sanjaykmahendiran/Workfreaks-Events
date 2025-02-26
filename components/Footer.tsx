@@ -89,7 +89,11 @@ export default function Footer() {
               </li>
               <li className="flex items-center">
                 <Phone className="w-5 h-5 text-white mr-3" />
-                <span className="hover:text-muted-foreground text-white">+91 9840106797</span>
+                <div className="text-white hover:text-muted-foreground">
+                  <span className="block">+91 98401 06797</span>
+                  <span className="block">+91 90800 69977</span>
+                </div>
+
               </li>
               <li className="flex items-center">
                 <a href="mailto:events@workfreaks.app" className="flex items-center hover:text-muted-foreground text-white transition-colors">
@@ -99,7 +103,7 @@ export default function Footer() {
               </li>
               <li className="flex items-center">
                 <Clock className="w-5 h-5 text-white mr-3" />
-                <span className="hover:text-muted-foreground text-white">Mon - Fri: 9:00 AM - 6:00 PM</span>
+                <span className="hover:text-muted-foreground text-white">Mon - Sun: 9:00 AM - 9:00 PM</span>
               </li>
             </ul>
           </div>

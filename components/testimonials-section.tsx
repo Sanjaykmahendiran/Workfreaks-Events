@@ -1,6 +1,6 @@
 'use client'
 
-import {  useCallback, useEffect } from 'react'
+import { useCallback, useEffect } from 'react'
 import Image from 'next/image'
 import { Star } from 'lucide-react'
 import useEmblaCarousel from 'embla-carousel-react'
@@ -27,34 +27,40 @@ export function TestimonialsSection() {
 
   const testimonials = [
     {
-      name: "Aarav Sharma",
-      quote: "Events & Shows handled our annual conference flawlessly. Their professionalism and attention to detail were unmatched!",
-      avatar: men
+      name: "Aarav Sharma - COO",
+      quote: "Our annual conference was handled with meticulous attention to detail. Every department was taken care of, from transportation and check-in to the entire event and departure. Well done team .",
+      avatar: men,
+      rating: 4
     },
     {
       name: "Rajesh",
-      quote: "Our wedding was magical! Events & Shows brought our dream celebration to life with their incredible planning.",
-      avatar: men
+      quote: "Our wedding was an absolute fairytale! It was beyond magical, and Events & Shows turned our dream celebration into a breathtaking reality. Every single detail was flawlessly crafted, from start to finish, with their incredible planning. The day surpassed every expectation we had and created memories we will cherish forever. It was truly an unforgettable experience!",
+      avatar: men,
+      rating: 5
     },
     {
-      name: "Vikram Iyer",
-      quote: "The surprise party for my 40th birthday was beyond my wildest expectations. Truly unforgettable!",
-      avatar: men
+      name: "DR .Vikram Iyer",
+      quote: "The surprise party for my 40th birthday was absolutely off the charts! The decorations were stunning, with vibrant colors, elegant floral arrangements, and intricate lighting that created the perfect atmosphere. Every detail was thought out, from the custom-themed décor to the beautifully arranged party favors. The organization was flawless—every element, from the smooth flow of activities to the seamless coordination of guests, made the day feel effortless. It went beyond my wildest expectations, and I couldn’t have asked for a more unforgettable celebration. It was filled with laughter, joy, and memories that will last a lifetime!",
+      avatar: men,
+      rating: 4
     },
     {
-      name: "Neha Patel",
-      quote: "The product launch event exceeded all expectations. The venue decoration and timing were perfect!",
-      avatar: men
+      name: "Neha Patel- Fashion Designer ",
+      quote: "The product launch event exceeded all expectations! The meticulous planning and hard work behind every detail truly paid off. The venue decoration was nothing short of breathtaking, with every corner thoughtfully designed to reflect the essence of the product. The timing was flawless, with each segment perfectly executed to keep the energy high and the audience engaged. From coordinating logistics to ensuring every team member was in sync, the behind-the-scenes effort was exceptional. It was a smooth, seamless event that left a lasting impression on everyone involved!",
+      avatar: men,
+      rating: 5
     },
     {
       name: "Sandeep Verma",
-      quote: "Events & Shows helped us raise record donations with their expertly planned charity gala. Outstanding service!",
-      avatar: men
+      quote: "Events & Shows played an instrumental role in helping us raise record donations with their expertly planned charity gala. From the elegant décor to the seamless flow of the evening, every detail was meticulously organized to create an unforgettable experience. Their dedication and professionalism were evident in how they engaged our guests, encouraged generosity, and created an atmosphere of warmth and giving. The result was beyond our expectations, with an overwhelming amount of support for the cause. Outstanding service that truly made a difference!",
+      avatar: men,
+      rating: 4
     },
     {
       name: "Ananya Reddy",
-      quote: "From stage design to crowd management, every aspect was handled professionally. Best event partner ever!",
-      avatar: men
+      quote: "From stage design to crowd management, every aspect of our event featuring the social celebrity was handled with the utmost professionalism. The stage was beautifully designed to highlight the celebrity's presence, creating an unforgettable visual impact. Crowd management was seamless, ensuring everyone had the best experience without any hiccups. The event flowed smoothly, thanks to the attention to detail and the careful coordination behind the scenes. Events & Shows proved to be the best event partner ever, making the entire experience effortless and extraordinary!",
+      avatar: men,
+      rating: 5
     }
   ];
 
@@ -81,11 +87,11 @@ export function TestimonialsSection() {
                       </div>
                     </div>
                     <div className="flex gap-1 mb-3">
-                      {[...Array(5)].map((_, i) => (
+                      {[...Array(testimonial.rating)].map((_, i) => (
                         <Star key={i} className="w-5 h-5 fill-yellow-400 text-yellow-400" />
                       ))}
                     </div>
-                    <p className="text-gray-600">{testimonial.quote}</p>
+                    <p className="text-gray-600 text-justify">{testimonial.quote}</p>
                   </div>
                 </div>
               ))}

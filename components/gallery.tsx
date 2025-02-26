@@ -7,37 +7,36 @@ import { motion } from "framer-motion";
 import * as corporateImages from "@/app/assets/corporate-events";
 import * as marriageImages from "@/app/assets/Marriage";
 import * as bdayImages from "@/app/assets/bday";
-import * as specialOccasion from "@/app/assets/special-occasion"
+import * as specialOccasionImages from "@/app/assets/special-occasion";
 
 // Convert images into an array
 const images = [
   // Corporate Events
-  ...Object.entries(corporateImages).map(([ src], index) => ({
+  ...Object.values(corporateImages).map((src, index) => ({
     id: index + 1,
-    src,
+    src, // This should now be a valid image module import
     alt: `Corporate Event ${index + 1}`,
   })),
 
   // Marriage Events
-  ...Object.entries(marriageImages).map(([ src], index) => ({
+  ...Object.values(marriageImages).map((src, index) => ({
     id: index + 13,
     src,
     alt: `Marriage Event ${index + 1}`,
   })),
 
   // Birthday Events
-  ...Object.entries(bdayImages).map(([ src], index) => ({
+  ...Object.values(bdayImages).map((src, index) => ({
     id: index + 47,
     src,
     alt: `Birthday Event ${index + 1}`,
   })),
 
-    // Birthday Events
-  
-  ...Object.entries(specialOccasion).map(([ src], index) => ({
-    id: index + 47,
+  // Special Occasion Events
+  ...Object.values(specialOccasionImages).map((src, index) => ({
+    id: index + 75, // Changed to avoid duplicate IDs
     src,
-    alt: `Birthday Event ${index + 1}`,
+    alt: `Special Occasion Event ${index + 1}`,
   })),
 ];
 

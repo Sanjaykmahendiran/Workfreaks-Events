@@ -9,9 +9,9 @@ import 'swiper/css';
 import 'swiper/css/pagination';
 import CorporateImage1 from '@/app/assets/corporate-events/image1.jpg';
 import CorporateImage2 from '@/app/assets/corporate-events/image2.jpg';
-import WeddingImage1 from '@/app/assets/marriage/image30.jpg';
-import WeddingImage2 from '@/app/assets/marriage/image12.jpg';
-import BirthdayImage1 from '@/app/assets/bday/image13.jpg';
+import WeddingImage1 from '@/app/assets/marriage/image36.jpg';
+import WeddingImage2 from '@/app/assets/marriage/image41.jpg';
+import BirthdayImage1 from '@/app/assets/bday/image6.jpg';
 import BirthdayImage2 from '@/app/assets/bday/image1.jpg';
 import SpecialImage1 from '@/app/assets/special-occasion/image2.jpg';
 import SpecialImage2 from '@/app/assets/special-occasion/image10.jpg';
@@ -94,7 +94,7 @@ export default function EventShowcase() {
         </div>
         <div className="w-full lg:w-1/2 text-center lg:text-left">
           <h3 className="text-2xl md:text-3xl font-semibold mb-4">{activeEvent.type} Events</h3>
-          <p className="text-gray-700 text-sm md:text-lg">{activeEvent.description}</p>
+          <p className="text-gray-700 text-sm md:text-lg text-justify">{activeEvent.description}</p>
         </div>
       </motion.div>
     </div>
