@@ -1,6 +1,6 @@
 import { Clock, Facebook, Instagram, Linkedin, Mail, MapPin, Phone, Twitter, Youtube } from "lucide-react";
 import Image from "next/image";
-import logo from "@/app/assets/logo.png"
+import logo from "@/app/assets/logo-White.png"
 
 
 export default function Footer() {
