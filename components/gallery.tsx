@@ -5,7 +5,7 @@ import { motion } from "framer-motion";
 
 // Import images using index files
 import * as corporateImages from "@/app/assets/corporate-events";
-import * as marriageImages from "@/app/assets/Marriage";
+import * as marriageImages from "@/app/assets/marriage";
 import * as bdayImages from "@/app/assets/bday";
 import * as specialOccasionImages from "@/app/assets/special-occasion";
 

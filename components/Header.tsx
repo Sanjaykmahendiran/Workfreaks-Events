@@ -17,8 +17,8 @@ export default function Header() {
   }
 
   return (
-    <header className="w-full fixed top-0 left-0 bg-white shadow-md z-50">
-      <nav className="container mx-auto px-6 py-3 flex items-center justify-between">
+    <header className="w-full fixed top-0 left-0 bg-white shadow-md z-50 h-20 flex items-center">
+      <nav className="container mx-auto px-6 flex items-center justify-between w-full">
         {/* Logo */}
         <motion.div
           initial={{ opacity: 0, x: -20 }}
@@ -30,8 +30,8 @@ export default function Header() {
               src={logo}
               alt="Events & Shows"
               width={130}
-              height={50}
-              className="h-18 w-auto"
+              height={70}
+              className="h-20 w-[200px]"
             />
           </Link>
         </motion.div>
@@ -56,15 +56,15 @@ export default function Header() {
 
         {/* Mobile Menu Button */}
         <div className="md:hidden">
-          <button onClick={() => setIsOpen(!isOpen)}>
-            <svg className="w-6 h-6 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+          <button onClick={() => setIsOpen(!isOpen)} className="p-2">
+            <svg className="w-6 h-6 text-black" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
               <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M4 6h16M4 12h16M4 18h16" />
             </svg>
           </button>
         </div>
       </nav>
 
-      {/* Mobile Menu - Fixed Positioning Fix */}
+      {/* Mobile Menu */}
       <AnimatePresence>
         {isOpen && (
           <motion.div
@@ -72,7 +72,7 @@ export default function Header() {
             animate={{ opacity: 1, y: 0 }}
             exit={{ opacity: 0, y: -10 }}
             transition={{ duration: 0.3 }}
-            className="absolute top-full left-0 w-full bg-[#0b0a45] text-white p-4 z-50 shadow-lg"
+            className="absolute top-20 left-0 w-full bg-[#0b0a45] text-white p-4 z-50 shadow-lg"
           >
             <button onClick={() => handleNavigation('/')} className="block py-2">Home</button>
             <button onClick={() => handleNavigation('/aboutus')} className="block py-2">About Us</button>
@@ -92,7 +92,7 @@ export default function Header() {
 
 function NavLink({ href, children }: { href: string; children: React.ReactNode }) {
   return (
-    <Link href={href} className="text-#0b0a45 hover:text-gray-300 font-bold">
+    <Link href={href} className="text-[#0b0a45] hover:text-gray-500 font-bold">
       {children}
     </Link>
   )

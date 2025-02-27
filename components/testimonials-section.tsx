@@ -5,6 +5,7 @@ import Image from 'next/image'
 import { Star } from 'lucide-react'
 import useEmblaCarousel from 'embla-carousel-react'
 import men from "@/app/assets/Men.webp"
+import women from "@/app/assets/Women.webp"
 
 export function TestimonialsSection() {
   const [emblaRef, emblaApi] = useEmblaCarousel({ loop: true, align: 'start' })
@@ -47,7 +48,7 @@ export function TestimonialsSection() {
     {
       name: "Neha Patel- Fashion Designer ",
       quote: "The product launch event exceeded all expectations! The meticulous planning and hard work behind every detail truly paid off. The venue decoration was nothing short of breathtaking, with every corner thoughtfully designed to reflect the essence of the product. The timing was flawless, with each segment perfectly executed to keep the energy high and the audience engaged. From coordinating logistics to ensuring every team member was in sync, the behind-the-scenes effort was exceptional. It was a smooth, seamless event that left a lasting impression on everyone involved!",
-      avatar: men,
+      avatar: women,
       rating: 5
     },
     {
@@ -59,7 +60,7 @@ export function TestimonialsSection() {
     {
       name: "Ananya Reddy",
       quote: "From stage design to crowd management, every aspect of our event featuring the social celebrity was handled with the utmost professionalism. The stage was beautifully designed to highlight the celebrity's presence, creating an unforgettable visual impact. Crowd management was seamless, ensuring everyone had the best experience without any hiccups. The event flowed smoothly, thanks to the attention to detail and the careful coordination behind the scenes. Events & Shows proved to be the best event partner ever, making the entire experience effortless and extraordinary!",
-      avatar: men,
+      avatar: women,
       rating: 5
     }
   ];
