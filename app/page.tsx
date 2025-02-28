@@ -10,7 +10,7 @@ import EnquiryForm from '@/components/EnquiryForm'
 import { TestimonialsSection } from '@/components/testimonials-section'
 import WhatsAppChatButton from '@/components/whatsappChat'
 
-export default function Home() {
+export default function EventsPage() {
   return (
     <main className="min-h-screen flex flex-col pt-[58px]">
       {/* Updated Header Component */}
@@ -25,7 +25,6 @@ export default function Home() {
       <section id="events">
         <EventShowcase />
       </section>
-
 
       <div>
         <TestimonialsSection />
